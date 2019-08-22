@@ -37,7 +37,7 @@ public class Main extends JavaPlugin {
 
     public static void startBot() {
         try {
-            jda = new JDABuilder(AccountType.BOT).setToken("NTcwMDE0NDUwMjM3ODMzMjI2.XV3Frw.H5vN_bBJaSv6QyQ7jh0hAiGDnek").build();
+            jda = new JDABuilder(AccountType.BOT).setToken("TOKEN AQUI").build();
         } catch (LoginException e) {
             e.printStackTrace();
         }

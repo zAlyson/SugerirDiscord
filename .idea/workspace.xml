@@ -7,21 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44083572-d7e4-4289-9386-112399ec40c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/alysonsantos/sugerir/entity/DiscordManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/zSugestão_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/zSugestão_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/commands/CommandSugerir.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/commands/CommandSugerir.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/entity/PlayerDiscord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/entity/PlayerDiscord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/entity/PlayerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/entity/PlayerManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/events/EventPlayerChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/events/EventPlayerChat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zSugestão/alysonsantos/sugerir/events/EventPlayerJoin.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alysonsantos/sugerir/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alysonsantos/sugerir/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alysonsantos/sugerir/commands/CommandSugerir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alysonsantos/sugerir/commands/CommandSugerir.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alysonsantos/sugerir/entity/PlayerDiscord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alysonsantos/sugerir/entity/PlayerDiscord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alysonsantos/sugerir/entity/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alysonsantos/sugerir/entity/PlayerManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alysonsantos/sugerir/events/EventPlayerChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alysonsantos/sugerir/events/EventPlayerChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alysonsantos/sugerir/events/EventPlayerJoin.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +24,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/commands/CommandSugerir.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="24">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,15 +49,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-103">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="100">
+              <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onEnable#0;class#Main#0" />
-                <element signature="method#startBot#0;class#Main#0" />
                 <element signature="method#registerCommandsEvents#0;class#Main#0" />
               </folding>
             </state>
@@ -106,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/events/EventPlayerChat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="934">
+              <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,17 +141,17 @@
         <option value="$PROJECT_DIR$/src/alysonsantos/sugerir/entity/PlayerManager.java" />
         <option value="$PROJECT_DIR$/src/alysonsantos/sugerir/entity/PlayerDiscord.java" />
         <option value="$PROJECT_DIR$/src/alysonsantos/sugerir/entity/DiscordManager.java" />
-        <option value="$PROJECT_DIR$/src/alysonsantos/sugerir/Main.java" />
         <option value="$PROJECT_DIR$/src/alysonsantos/sugerir/events/EventPlayerChat.java" />
         <option value="$PROJECT_DIR$/src/alysonsantos/sugerir/commands/CommandSugerir.java" />
+        <option value="$PROJECT_DIR$/src/alysonsantos/sugerir/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="638" />
+    <option name="y" value="41" />
+    <option name="width" value="683" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -275,7 +265,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20090635" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16389728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -356,23 +346,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/events/EventPlayerChat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="934">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#Main#0" />
-            <element signature="method#startBot#0;class#Main#0" />
-            <element signature="method#registerCommandsEvents#0;class#Main#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/entity/PlayerDiscord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -387,13 +367,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/events/EventPlayerChat.java">
+    <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/entity/PlayerDiscord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-56">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -410,8 +387,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/commands/CommandSugerir.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="24">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alysonsantos/sugerir/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#registerCommandsEvents#0;class#Main#0" />
+          </folding>
         </state>
       </provider>
     </entry>

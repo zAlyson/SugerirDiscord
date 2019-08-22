@@ -6,9 +6,17 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
+
 import static alysonsantos.sugerir.Main.*;
 
 public class CommandSugerir implements CommandExecutor {
+
+    // Lembrando que o Cooldown não é salvo quando o servidor reiniciar.
+
+    public static HashMap<String, Long> cooldowns = new HashMap<>();
+
     @Override
     public boolean onCommand(CommandSender s, Command cmd, String lb, String[] args) {
 
@@ -17,6 +25,15 @@ public class CommandSugerir implements CommandExecutor {
         }
 
         Player p = (Player) s;
+
+        if (cooldowns.containsKey(p.getName()) && cooldowns.get(p.getName()) >= System.currentTimeMillis()) {
+            long remainingTime = cooldowns.get(p.getName()) - System.currentTimeMillis();
+
+            p.sendMessage(new String[]{"", "§e Não foi possível executar este comando.", "§f (Aguarde §e" + TimeUnit.MILLISECONDS.toSeconds(remainingTime + 1) + " §fsegundos)", ""});
+            return false;
+        } else {
+            cooldowns.remove(p.getName());
+        }
 
         if (getPlayerManager().getPlayer(p.getName()) != null && getPlayerManager().getPlayer(p.getName()).isSugerindo()) {
             p.sendMessage(new String[]{"", "§c Você não pode executar este comando agora.", ""});

@@ -1,8 +1,10 @@
 package alysonsantos.sugerir.events;
 
+import alysonsantos.sugerir.commands.CommandSugerir;
 import alysonsantos.sugerir.entity.PlayerDiscord;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.entities.TextChannel;
+import org.bukkit.command.Command;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -11,6 +13,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import static alysonsantos.sugerir.Main.*;
 
 import java.awt.*;
+import java.util.concurrent.TimeUnit;
 
 public class EventPlayerChat implements Listener {
 
@@ -53,6 +56,8 @@ public class EventPlayerChat implements Listener {
             channel.sendMessage(embed.build()).queue();
             p.sendMessage("\n §aSugestão enviada com sucesso! \n ");
 
+            // Adicionando o cooldown ao jogador.
+            CommandSugerir.cooldowns.put(playerName, System.currentTimeMillis() + TimeUnit.MINUTES.toMillis(5));
             user.setSugerindo(false);
             e.setCancelled(true);
         }
