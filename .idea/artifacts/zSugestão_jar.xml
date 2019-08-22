@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="zSugestão:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/zSugestão_jar</output-path>
+    <output-path>$PROJECT_DIR$/../../Servidor #1/plugins</output-path>
     <root id="archive" name="zSugestão.jar">
       <element id="module-output" name="zSugestão" />
     </root>

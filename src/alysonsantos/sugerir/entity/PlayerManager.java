@@ -15,6 +15,10 @@ public class PlayerManager {
         return playerManagerList;
     }
 
+    public void createPlayer(PlayerDiscord playerDiscord) {
+        playerManagerList.add(playerDiscord);
+    }
+
     public PlayerDiscord getPlayer(String nome) {
         for (PlayerDiscord playerManager : playerManagerList) {
             if (playerManager.getPlayer().equalsIgnoreCase(nome)) return playerManager;

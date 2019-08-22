@@ -6,9 +6,8 @@ public class PlayerDiscord {
     private String discordId;
     private boolean sugerindo;
 
-    public PlayerDiscord(String player, String discordId) {
+    public PlayerDiscord(String player) {
         this.player = player;
-        this.discordId = discordId;
     }
 
     public String getPlayer() {

@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+
 import static alysonsantos.sugerir.Main.*;
 
 import java.awt.*;
@@ -27,20 +28,33 @@ public class EventPlayerChat implements Listener {
                 p.sendMessage(new String[]{"", "§c Pronto, ação cancelada!", ""});
                 return;
             }
-            e.setCancelled(true);
             PlayerDiscord user = getPlayerManager().getPlayer(playerName);
-
             EmbedBuilder embed = new EmbedBuilder();
-            embed.setTitle(" <:bell:> | **NOVA SUGESTÃO**:");
+
+            embed.setTitle(" <:notify:613468401184276490> | **NOVA SUGESTÃO**:");
             embed.setColor(Color.ORANGE);
-            embed.setThumbnail(jda.getUserById(user.getDiscordId()).getAvatarUrl());
+
+            if (user.getDiscordId() != null) {
+                embed.setThumbnail(jda.getUserById(user.getDiscordId()).getAvatarUrl());
+            } else {
+                embed.setThumbnail("https://icon-library.net/images/icon-new/icon-new-9.jpg");
+            }
+
             embed.addField(" Author:", playerName, true);
             embed.addField(" Sugestão:", mensagem, true);
-            embed.setFooter("Agradecemos pela sugestão!", jda.getGuilds().get(0).getIconUrl());
 
+            // Aqui você deve definir o ID do discord em que o seu bot está.
+            embed.setFooter("Agradecemos pela sugestão!", jda.getGuildById("610124508161900552").getIconUrl());
+
+            // Aqui você define o ID do canal em que as sugestões serão enviadas.
             TextChannel channel = jda.getTextChannelById("610812244753907713");
+
+            // Construindo o embed, e enviando para o canal.
             channel.sendMessage(embed.build()).queue();
             p.sendMessage("\n §aSugestão enviada com sucesso! \n ");
+
+            user.setSugerindo(false);
+            e.setCancelled(true);
         }
     }
 }

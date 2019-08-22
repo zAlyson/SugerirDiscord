@@ -1,6 +1,7 @@
 package alysonsantos.sugerir;
 
 import alysonsantos.sugerir.commands.CommandSugerir;
+import alysonsantos.sugerir.entity.DiscordManager;
 import alysonsantos.sugerir.entity.PlayerManager;
 import alysonsantos.sugerir.events.EventPlayerChat;
 import net.dv8tion.jda.core.AccountType;
@@ -15,8 +16,9 @@ import javax.security.auth.login.LoginException;
 
 public class Main extends JavaPlugin {
     public static Main plugin;
-    public static PlayerManager playerManager;
     public static JDA jda;
+    public static PlayerManager playerManager;
+    public static DiscordManager discordManager;
 
     public void onEnable() {
         plugin = this;
@@ -24,6 +26,7 @@ public class Main extends JavaPlugin {
         startBot();
         registerCommandsEvents();
 
+        discordManager = new DiscordManager();
         playerManager = new PlayerManager();
     }
 
@@ -31,10 +34,10 @@ public class Main extends JavaPlugin {
      * Iniciando o bot...
      * Defina o token do bot que está no discord de seu servidor, no ´setToken("")´"
      */
-    private void startBot() {
+
+    public static void startBot() {
         try {
-            jda = new JDABuilder(AccountType.BOT).setToken("").build();
-            cs.sendMessage(new String[]{"", "§bStoreAssociar: §fServidor vinculado com o discord §f'§eStoreNetwork - Equipe§f'§f!", ""});
+            jda = new JDABuilder(AccountType.BOT).setToken("NTcwMDE0NDUwMjM3ODMzMjI2.XV3Frw.H5vN_bBJaSv6QyQ7jh0hAiGDnek").build();
         } catch (LoginException e) {
             e.printStackTrace();
         }
@@ -47,6 +50,10 @@ public class Main extends JavaPlugin {
 
     public static PlayerManager getPlayerManager() {
         return playerManager;
+    }
+
+    public static DiscordManager getDiscordManager() {
+        return discordManager;
     }
 
     public ConsoleCommandSender cs = Bukkit.getConsoleSender();
